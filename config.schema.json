@@ -1,0 +1,221 @@
+{
+  "pluginAlias": "DakotaAlert",
+  "pluginType": "accessory",
+  "singular": true,
+  "headerDisplay": "This is the header display",
+  "footerDisplay": "This is the footer display",
+  "schema": {
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "default": "Dakota",
+      "required": true
+    },
+    "alerts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "title": "Alert",
+        "type": "object",
+        "properties": {
+          "label": {
+            "title": "Name",
+            "type": "string",
+            "default": "Arrival",
+            "required": true
+          },
+          "pin": {
+            "title": "GPIO Pin",
+            "type": "integer",
+            "default": 0,
+            "required": true,
+            "oneOf": [
+              {
+                "title": "GPIO0",
+                "enum": [
+                  0
+                ]
+              },
+              {
+                "title": "GPIO1",
+                "enum": [
+                  1
+                ]
+              },
+              {
+                "title": "GPIO2",
+                "enum": [
+                  2
+                ]
+              },
+              {
+                "title": "GPIO3",
+                "enum": [
+                  3
+                ]
+              },
+              {
+                "title": "GPIO4",
+                "enum": [
+                  4
+                ]
+              },
+              {
+                "title": "GPIO4",
+                "enum": [
+                  4
+                ]
+              },
+              {
+                "title": "GPIO5",
+                "enum": [
+                  5
+                ]
+              },
+              {
+                "title": "GPIO6",
+                "enum": [
+                  6
+                ]
+              },
+              {
+                "title": "GPIO7",
+                "enum": [
+                  7
+                ]
+              },
+              {
+                "title": "GPIO8",
+                "enum": [
+                  8
+                ]
+              },
+              {
+                "title": "GPIO9",
+                "enum": [
+                  9
+                ]
+              },
+              {
+                "title": "GPIO10",
+                "enum": [
+                  10
+                ]
+              },
+              {
+                "title": "GPIO11",
+                "enum": [
+                  11
+                ]
+              },
+              {
+                "title": "GPIO12",
+                "enum": [
+                  12
+                ]
+              },
+              {
+                "title": "GPIO13",
+                "enum": [
+                  13
+                ]
+              },
+              {
+                "title": "GPIO14",
+                "enum": [
+                  14
+                ]
+              },
+              {
+                "title": "GPIO15",
+                "enum": [
+                  15
+                ]
+              },
+              {
+                "title": "GPIO16",
+                "enum": [
+                  16
+                ]
+              },
+              {
+                "title": "GPIO17",
+                "enum": [
+                  17
+                ]
+              },
+              {
+                "title": "GPIO18",
+                "enum": [
+                  18
+                ]
+              },
+              {
+                "title": "GPIO19",
+                "enum": [
+                  19
+                ]
+              },
+              {
+                "title": "GPIO20",
+                "enum": [
+                  20
+                ]
+              },
+              {
+                "title": "GPIO21",
+                "enum": [
+                  21
+                ]
+              },
+              {
+                "title": "GPIO22",
+                "enum": [
+                  22
+                ]
+              },
+              {
+                "title": "GPIO23",
+                "enum": [
+                  23
+                ]
+              },
+              {
+                "title": "GPIO24",
+                "enum": [
+                  24
+                ]
+              },
+              {
+                "title": "GPIO25",
+                "enum": [
+                  25
+                ]
+              },
+              {
+                "title": "GPIO26",
+                "enum": [
+                  26
+                ]
+              },
+              {
+                "title": "GPIO27",
+                "enum": [
+                  27
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "debug": {
+      "title": " Enable Debug Mode?",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "form": null,
+  "display": null
+}

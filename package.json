@@ -1,0 +1,30 @@
+{
+  "private": false,
+  "displayName": "Dakota Alert",
+  "name": "homebridge-dakota-alert",
+  "version": "0.1.0",
+  "description": "plugin for Dakota Alert RE-4k Plus",
+  "author": "Tom Hoag",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomhoag/homebridge-dakota-alert"
+  },
+  "bugs": {
+    "url": "https://github.com/tomhoag/homebridge-dakota-alert/issues"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "gpio",
+    "dakota",
+    "alert"
+  ],
+  "engines": {
+    "node": ">=14.18.1",
+    "homebridge": ">=1.5.0"
+  },
+  "main": "dakotaalert.js",
+  "dependencies": {
+    "onoff": "~6.0.3"
+  }
+}
