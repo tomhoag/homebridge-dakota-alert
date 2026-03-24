@@ -2,8 +2,8 @@
   "private": false,
   "displayName": "Dakota Alert",
   "name": "homebridge-dakota-alert",
-  "version": "0.1.0",
-  "description": "plugin for Dakota Alert RE-4k Plus",
+  "version": "0.2.0",
+  "description": "Homebridge plugin for Dakota Alert RE-4k Plus wireless motion receiver",
   "author": "Tom Hoag",
   "license": "Apache-2.0",
   "repository": {
@@ -17,14 +17,30 @@
     "homebridge-plugin",
     "gpio",
     "dakota",
-    "alert"
+    "alert",
+    "motion-sensor"
   ],
   "engines": {
-    "node": ">=14.18.1",
-    "homebridge": ">=1.5.0"
+    "node": ">=18.0.0",
+    "homebridge": ">=1.6.0"
   },
-  "main": "dakotaalert.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**.ts --max-warnings=0",
+    "watch": "npm run build && npm link && nodemon",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
-    "onoff": "~6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "homebridge": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0",
+    "nodemon": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
   }
 }
