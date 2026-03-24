@@ -1,11 +1,4 @@
 
-<p align="center">
-
-<img src="https://github.com/homebridge/branding/raw/master/logos/homebridge-wordmark-logo-vertical.png" width="150">
-
-</p>
-
-
 # Dakota Alert Homebridge Plugin
 
 This is a Homebridge plugin to expose alerts from the Dakota Alert RE-4k Plus wireless receiver as HomeKit motion sensors. The wireless receiver picks up motion alert signals from the Dakota Alert Directional Wireless Probe Transmitter (DAPT-4000).
